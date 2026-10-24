@@ -1,7 +1,7 @@
 """Edition-aware production briefs and human review plans. No Resolve mutation."""
 from __future__ import annotations
 
-DEFAULT_EDITION = "kids-3d"
+DEFAULT_EDITION = "biblical-period"
 
 def production_brief(args):
     edition = args.get("edition", DEFAULT_EDITION)
