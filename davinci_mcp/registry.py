@@ -429,6 +429,8 @@ def build_registry() -> Registry:
         ),
     )
 
+    from .tools_production import register as register_production
+    register_production(registry.add_tool)
     _register_siblings(registry)
     return registry
 
